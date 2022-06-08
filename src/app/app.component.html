@@ -1,0 +1,8 @@
+<header class="header">
+  <ul>
+    <li *ngFor="let link of navLike">
+      <a [routerLink]="link.path">{{link.name}}</a>
+    </li>
+  </ul>
+</header>
+<router-outlet></router-outlet>
